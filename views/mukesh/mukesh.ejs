@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Use a leading slash so it resolves from the root domain -->
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+<title>Mukesh Cab Services | Delhi Taxi & Cab Booking</title>
+<meta name="description" content="Book reliable local, airport and outstation cab services with Mukesh Cab Services in Delhi. Call or WhatsApp for quick booking.">
+<style>
+:root{--ink:#101828;--muted:#667085;--brand:#f6c344;--dark:#111827;--bg:#f8fafc;--card:#fff;--line:#eaecf0;--green:#16a34a}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:var(--bg);line-height:1.5}
+a{text-decoration:none;color:inherit}.container{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{height:72px;display:flex;items-center;justify-content:space-between}.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:20px}.logo-mark{width:38px;height:38px;border-radius:11px;background:var(--brand);display:grid;place-items:center;font-size:20px}
+nav{display:flex;gap:26px;color:#475467;font-weight:600;font-size:14px}nav a:hover{color:#111827}
+.nav-actions{display:flex;gap:10px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;border-radius:12px;padding:12px 18px;font-weight:750;cursor:pointer}.btn-dark{background:var(--dark);color:#fff}.btn-yellow{background:var(--brand);color:#111}.btn-green{background:var(--green);color:#fff}.btn-outline{background:#fff;border:1px solid var(--line)}
+.hero{padding:74px 0 56px;background:linear-gradient(180deg,#fff 0%,#f8fafc 100%)}.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:55px;align-items:center}
+.eyebrow{display:inline-flex;background:#fff4c7;border:1px solid #f7df77;border-radius:999px;padding:7px 12px;font-size:13px;font-weight:800;margin-bottom:18px}.hero h1{font-size:clamp(40px,6vw,68px);line-height:1.02;letter-spacing:-2.5px;margin:0 0 20px}.hero h1 span{position:relative}.hero h1 span:after{content:"";position:absolute;left:0;bottom:-3px;width:100%;height:8px;background:var(--brand);z-index:-1;border-radius:8px}
+.hero p{font-size:18px;color:var(--muted);max-width:620px}.hero-buttons{display:flex;gap:12px;flex-wrap:wrap;margin:28px 0}.trust{display:flex;gap:24px;flex-wrap:wrap;color:#475467;font-size:14px}.trust b{color:#111827}
+.booking{background:var(--dark);color:#fff;padding:28px;border-radius:24px;box-shadow:0 25px 60px rgba(16,24,40,.18)}.booking h2{margin:0 0 5px;font-size:25px}.booking p{color:#cbd5e1;font-size:14px;margin-top:5px}.form{display:grid;gap:12px;margin-top:18px}.field{background:#fff;border-radius:12px;padding:11px 13px}.field label{display:block;color:#667085;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.06em}.field input,.field select{width:100%;border:0;outline:0;font-size:15px;padding:5px 0;background:transparent}.booking .btn{width:100%;margin-top:4px}
+.section{padding:78px 0}.section-head{text-align:center;max-width:680px;margin:0 auto 38px}.section-head h2{font-size:36px;letter-spacing:-1px;margin:0 0 10px}.section-head p{color:var(--muted)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:25px}.icon{width:48px;height:48px;border-radius:14px;background:#fff4c7;display:grid;place-items:center;font-size:23px;margin-bottom:18px}.card h3{margin:0 0 8px}.card p{color:var(--muted);font-size:14px;margin:0}
+.fleet{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.car{background:#fff;border:1px solid var(--line);border-radius:20px;overflow:hidden}.car-img{height:170px;background:linear-gradient(135deg,#dfe4ea,#fff);display:grid;place-items:center;font-size:68px}.car-body{padding:18px}.car-body h3{margin:0}.tag{display:inline-block;margin-top:8px;padding:5px 9px;background:#f2f4f7;border-radius:8px;font-size:12px;color:#475467}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.step{position:relative;background:#fff;border:1px solid var(--line);border-radius:20px;padding:25px}.num{font-size:13px;font-weight:900;color:#8a6500;background:#fff4c7;border-radius:999px;padding:6px 9px;display:inline-block;margin-bottom:18px}
+.cta{background:var(--dark);color:#fff;border-radius:28px;padding:48px;display:flex;justify-content:space-between;align-items:center;gap:25px}.cta h2{font-size:35px;margin:0 0 8px}.cta p{margin:0;color:#cbd5e1}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}.contact-card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:25px}.contact-item{padding:13px 0;border-bottom:1px solid var(--line)}.contact-item:last-child{border-bottom:0}.contact-item small{display:block;color:var(--muted);font-weight:700}.contact-item a{font-weight:800}
+footer{padding:35px 0;color:#667085;border-top:1px solid var(--line);font-size:13px}.footer-row{display:flex;justify-content:space-between;gap:15px}
+.toast{position:fixed;right:20px;bottom:20px;background:#111827;color:#fff;padding:14px 18px;border-radius:12px;display:none;box-shadow:0 10px 30px #0002}
+@media(max-width:850px){nav{display:none}.hero-grid,.contact-grid{grid-template-columns:1fr}.cards,.fleet,.steps{grid-template-columns:1fr}.hero{padding-top:48px}.cta{padding:30px;display:block}.cta .btn{margin-top:20px}.nav-actions .btn-outline{display:none}}
+</style>
+</head>
+<body>
+<header><div class="container nav">
+<a class="logo" href="#"><span class="logo-mark">🚕</span> Mukesh Cab Services</a>
+<nav><a href="#services">Services</a><a href="#fleet">Cars</a><a href="#how">How it works</a><a href="#contact">Contact</a></nav>
+<div class="nav-actions"><a class="btn btn-outline" href="tel:+919211536667">Call</a><a class="btn btn-green" href="https://wa.me/919211536667">WhatsApp</a></div>
+</div></header>
+
+<main>
+<section class="hero"><div class="container hero-grid">
+<div>
+<div class="eyebrow">⭐ Reliable Delhi Cab Service</div>
+<h1>Travel easy.<br><span>Book your cab.</span></h1>
+<p>Comfortable, dependable taxi service for local rides, airport transfers and outstation journeys. Quick booking by phone or WhatsApp.</p>
+<div class="hero-buttons"><a class="btn btn-yellow" href="#booking">Book a Cab →</a><a class="btn btn-dark" href="tel:+919211536667">☎ +91 92115 36667</a></div>
+<div class="trust"><span>✓ <b>Professional drivers</b></span><span>✓ <b>Comfortable rides</b></span><span>✓ <b>Easy booking</b></span></div>
+</div>
+<div class="booking" id="booking">
+<h2>Request a booking</h2><p>Send your trip details and we’ll contact you to confirm the fare and pickup.</p>
+<form class="form" id="bookingForm">
+<div class="field"><label>Your name</label><input id="name" required placeholder="Enter your name"></div>
+<div class="field"><label>Phone</label><input id="phone" required type="tel" placeholder="10-digit mobile number"></div>
+<div class="field"><label>Pickup location</label><input id="pickup" required placeholder="Where should we pick you up?"></div>
+<div class="field"><label>Destination</label><input id="drop" required placeholder="Where are you going?"></div>
+<div class="field"><label>Trip type</label><select id="trip"><option>Local</option><option>Airport Transfer</option><option>Outstation One Way</option><option>Outstation Round Trip</option></select></div>
+<button class="btn btn-yellow" type="submit">Send Booking Request</button>
+</form>
+</div>
+</div></section>
+
+<section class="section" id="services"><div class="container"><div class="section-head"><h2>Cab services made simple</h2><p>Choose the ride that fits your journey. Need something custom? Call us and we’ll help.</p></div>
+<div class="cards">
+<div class="card"><div class="icon">📍</div><h3>Local Taxi</h3><p>Convenient city rides for daily travel, appointments, shopping and more.</p></div>
+<div class="card"><div class="icon">✈️</div><h3>Airport Transfers</h3><p>Plan a comfortable pickup or drop to Delhi airport with a professional driver.</p></div>
+<div class="card"><div class="icon">🛣️</div><h3>Outstation Trips</h3><p>One-way and round-trip cab options for family trips, business travel and holidays.</p></div>
+</div></div></section>
+
+<section class="section" id="fleet"><div class="container"><div class="section-head"><h2>Comfortable cars for every trip</h2><p>Vehicle availability can vary. Contact us for the best option for your group.</p></div>
+<div class="fleet">
+<div class="car"><div class="car-img">🚗</div><div class="car-body"><h3>Sedan</h3><span class="tag">Up to 4 passengers</span></div></div>
+<div class="car"><div class="car-img">🚙</div><div class="car-body"><h3>MPV / SUV</h3><span class="tag">Family & luggage friendly</span></div></div>
+<div class="car"><div class="car-img">🚐</div><div class="car-body"><h3>Group Travel</h3><span class="tag">Ask for availability</span></div></div>
+</div></div></section>
+
+<section class="section" id="how"><div class="container"><div class="section-head"><h2>Book in 3 easy steps</h2></div>
+<div class="steps"><div class="step"><span class="num">01</span><h3>Share your trip</h3><p>Tell us your pickup, destination, date and preferred vehicle.</p></div><div class="step"><span class="num">02</span><h3>Get confirmation</h3><p>We’ll discuss the fare and confirm the ride with you.</p></div><div class="step"><span class="num">03</span><h3>Enjoy the journey</h3><p>Your cab arrives for pickup and you travel comfortably.</p></div></div></div></section>
+
+<section class="section"><div class="container"><div class="cta"><div><h2>Ready to book your ride?</h2><p>Call us or send your booking details on WhatsApp.</p></div><div><a class="btn btn-yellow" href="tel:+919211536667">Call Now</a> <a class="btn btn-green" href="https://wa.me/919211536667">WhatsApp</a></div></div></div></section>
+
+<section class="section" id="contact"><div class="container"><div class="section-head"><h2>Contact Mukesh Cab Services</h2><p>New Jankipuri, Uttam Nagar, Delhi</p></div>
+<div class="contact-grid"><div class="contact-card">
+<div class="contact-item"><small>Phone</small><a href="tel:+919211536667">+91 92115 36667</a></div>
+<div class="contact-item"><small>Service</small><b>Taxi / Cab Service</b></div>
+<div class="contact-item"><small>Location</small><b>RZ, B-59, near Old Age Home, New Jankipuri, Uttam Nagar, Delhi 110059</b></div>
+</div>
+<div class="contact-card"><h3>Find us on Google Maps</h3><p style="color:#667085">Get directions to our location in New Jankipuri, Uttam Nagar.</p><a class="btn btn-dark" target="_blank" href="https://maps.app.goo.gl/871VJZm3kTfRLht59">Open Google Maps ↗</a></div>
+</div></div></section>
+</main>
+
+<footer>
+  <div class="container footer-row">
+    <span>© <%= new Date().getFullYear() %> Mukesh Cab Services. All rights reserved.</span>
+    <span>Delhi • Local • Airport • Outstation</span>
+  </div>
+</footer>
+<div class="toast" id="toast">Opening WhatsApp with your booking details…</div>
+<script>
+document.getElementById('bookingForm').addEventListener('submit', function(e){
+ e.preventDefault();
+ const n=document.getElementById('name').value, p=document.getElementById('phone').value;
+ const pu=document.getElementById('pickup').value, d=document.getElementById('drop').value, t=document.getElementById('trip').value;
+ const msg=`Hello Mukesh Cab Services,%0A%0AI want to book a cab.%0AName: ${encodeURIComponent(n)}%0APhone: ${encodeURIComponent(p)}%0APickup: ${encodeURIComponent(pu)}%0ADestination: ${encodeURIComponent(d)}%0ATrip type: ${encodeURIComponent(t)}`;
+ document.getElementById('toast').style.display='block';
+ setTimeout(()=>{document.getElementById('toast').style.display='none'; window.open('https://wa.me/919211536667?text='+msg,'_blank')},500);
+});
+</script>
+</body>
+</html>

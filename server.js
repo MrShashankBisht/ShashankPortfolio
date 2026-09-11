@@ -4,10 +4,14 @@ const cors = require('cors');
 const db = require('./db');
 const { sendTelegramAlert } = require('./utils/notifier');
 require('dotenv').config();
+const replicaName = process.env.APP_NAME
+const HOST = '0.0.0.0';
 
 const app = express();
 const session = require('express-session');
 const adminRoutes = require('./routes/admin');
+// 1. Import the mukesh router
+const mukeshRouter = require('./routes/mukesh');
 
 // 1. Template Engine & Static Assets
 app.set('view engine', 'ejs');
@@ -46,6 +50,8 @@ app.use(session({
 
 // Mount separate admin route
 app.use('/admin', adminRoutes);
+// 2. Mount it on the /mukesh path
+app.use('/mukesh', mukeshRouter);
 
 // --------------------------------------------------------------------------
 // MAIN SERVER-SIDE RENDERED (SSR) ROUTE
@@ -220,6 +226,6 @@ app.get('/api/education', async (req, res) => {
 // SERVER INITIALIZATION
 // --------------------------------------------------------------------------
 const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => {
-  console.log(`🚀 Portfolio server running on http://localhost:${PORT}`);
+app.listen(PORT, HOST, () => {
+  console.log(`🚀 Portfolio server name ${replicaName} running on http://${HOST}:${PORT}`);
 });
